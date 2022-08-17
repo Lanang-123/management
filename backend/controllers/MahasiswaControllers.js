@@ -15,6 +15,7 @@ const getMahasiswaByNim = (req,res) => {
         .catch((err)=>res.status(404).json(err))
 }
 
+
 const insertMahasiswa = (req,res) => {
     const {nama_mahasiswa,nim,kelas} = req.body;
     let insert = "INSERT INTO tb_mahasiswa (nama_mahasiswa,nim,kelas) VALUES(?,?,?)";
